@@ -9,7 +9,8 @@ import java.util.function.Predicate;
 @Getter
 @Setter
 public class PredicateComparator<T> {
-    private Comparator comparator;
+    private T target;
+    private Comparator<T> comparator;
     private Predicate<T> predicate;
 
 }

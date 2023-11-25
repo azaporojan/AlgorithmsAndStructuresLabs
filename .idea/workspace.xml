@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="089884c7-ca46-497d-af81-3ab6ee1a778f" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/SequentialSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/sort/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="089884c7-ca46-497d-af81-3ab6ee1a778f" name="Changes" comment="Perfectly working sequentialSearch">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/InterpolationSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/utils/Utility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/MOCK_DATAA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bankTransfersExtended.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/usm/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usm/main/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usm/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usm/search/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usm/search/SequentialSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/SequentialSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usm/search/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usm/search/utils/PredicateComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usm/search/utils/PredicateComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usm/transfer/utility/BankTransferCSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usm/transfer/utility/BankTransferCSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bankTransfers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bankTransfers.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +44,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Tools/MAVEN_HOME/apache-maven-3.9.3" />
+        <option name="mavenHome" value="$USER_HOME$/Tools/MAVEN_HOME/apache-maven-3.9.3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -59,13 +64,22 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/azaporojan/IdeaProjects/AlgorithmsAndStructuresLabs/src/main/resources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BinarySearch">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\azaporojan\IdeaProjects\AlgorithmsAndStructuresLabs\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\azaporojan\IdeaProjects\AlgorithmsAndStructuresLabs\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.usm.main.App" />
       <module name="AlgorithmsAndStructuresLabs" />
@@ -94,8 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -108,6 +122,15 @@
       <option name="presentableId" value="Default" />
       <updated>1696147856088</updated>
     </task>
+    <task id="LOCAL-00001" summary="Perfectly working sequentialSearch">
+      <option name="closed" value="true" />
+      <created>1700300460997</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700300460997</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,18 +146,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Perfectly working sequentialSearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perfectly working sequentialSearch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../Tools/zulu17.40.19-ca-jdk17.0.6-win_x64/lib/src.zip!/java.base/java/util/stream/ReferencePipeline.java</url>
+          <url>jar://$USER_HOME$/Tools/zulu17.40.19-ca-jdk17.0.6-win_x64/lib/src.zip!/java.base/java/util/stream/ReferencePipeline.java</url>
           <line>165</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="searchInSorted.get(guess).transactionCurrency" />
+      </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/org/usm/search/InterpolationSearch.java" line="36">
+        <watch expression="searchInSorted.get(guess)" />
+      </inline-watch>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

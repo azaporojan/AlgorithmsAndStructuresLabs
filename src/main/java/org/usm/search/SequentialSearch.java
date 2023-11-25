@@ -3,6 +3,7 @@ package org.usm.search;
 import org.usm.search.utils.PredicateComparator;
 import org.usm.transfer.BankTransfer;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;

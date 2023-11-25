@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Sort {
-    public static <T> List<T> sortBy(List<T> sort, Comparator comparator) {
+    public static <T> List<T> sortBy(List<T> sort, Comparator<T> comparator) {
         sort.sort(comparator);
         return sort;
     }
