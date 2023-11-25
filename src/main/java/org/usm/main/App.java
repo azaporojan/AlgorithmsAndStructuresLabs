@@ -43,7 +43,6 @@ public class App {
     }
 
     public static boolean displayMainMenu(Scanner scanner, List<BankTransfer> bankTransfers) {
-        boolean stopFlag = false;
         String userInput;
         System.out.println("\n\n\n************ Menu: ***************");
         System.out.println("************ Choose an option ***************\n");
@@ -107,9 +106,9 @@ public class App {
         return false;
     }
 
-    public static void evaluateExecutionTime(String name, Function<Search, List<BankTransfer>> function, Search search) {
+    public static void evaluateExecutionTime(String name, Function<Search, List<BankTransfer>> searchFunction, Search search) {
         long startTime = System.nanoTime();
-        List<BankTransfer> searchResult = function.apply(search);
+        List<BankTransfer> searchResult = searchFunction.apply(search);
         long endTime = System.nanoTime();
 
         long durationInNanos = endTime - startTime;
